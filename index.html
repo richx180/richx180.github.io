@@ -1,15 +1,13 @@
-<canvas id="project" width="300" height="300"></canvas>
+<canvas id="project" width="300" height="300" style="border:1px solid #d3d3d3;"></canvas>
 <!DOCTYPE html>
 <html>
 	<head>
-		<h1>Hello World</h1>
-	</head>
-	<body>
 		<script>
-			window.onload=function() {
-				document.getElementById("project").innerHTML = "Hello World"
-			}
+			var canvas = document.getElementById("project")
+			var ctx = canvas.getContext("2d");
+			ctx.font = "30px Arial";
+			ctx.fillText("Hello World", 10, 50);
 		</script>
-	</body>
+	</head>
 	<div>
 </html>
